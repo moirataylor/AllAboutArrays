@@ -12,6 +12,7 @@ public class Main {
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
         Pattern1();
         Pattern2();
+        Pattern3();
 
 
     }
@@ -60,4 +61,17 @@ public class Main {
 
         }
     }
+    public static void Pattern3(){
+        for (int rows = 1; rows < 7; rows++) {
+
+            for (int columns = 1; columns < 7; columns++) {
+                System.out.print(columns);
+
+            }
+            System.out.println();
+
+        }
+
+    }
+
 }
