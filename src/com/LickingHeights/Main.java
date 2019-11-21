@@ -13,6 +13,7 @@ public class Main {
         Pattern1();
         Pattern2();
         Pattern3();
+        Pattern4();
 
 
     }
@@ -70,6 +71,15 @@ public class Main {
             }
             System.out.println();
 
+        }
+
+    }
+    public static void Pattern4(){
+        for (int rows = 6; rows > 0; rows--) {
+            for (int columns = rows; columns < 7; columns++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
     }
