@@ -11,8 +11,8 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
         Pattern1();
+        Pattern2();
 
-        
 
     }
 
@@ -39,18 +39,25 @@ public class Main {
         return number;
     }
 
-    public static void Pattern1(){
-        for(int rows=0;rows < 6; rows++){
+    public static void Pattern1() {
+        for (int rows = 0; rows < 7; rows++) {
 
-            for(int columns=0;columns<6;columns++){
+            for (int columns = 0; columns < 6; columns++) {
                 System.out.print("*");
             }
-       System.out.println();
+            System.out.println();
         }
-
     }
 
+    public static void Pattern2() {
+        for (int rows = 1; rows < 7; rows++) {
 
+            for (int columns = 0; columns < 7; columns++) {
+                System.out.print(rows);
 
+            }
+            System.out.println();
 
+        }
+    }
 }
