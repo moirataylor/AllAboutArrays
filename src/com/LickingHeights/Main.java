@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         int size = 10;
-        int lowestNumber = 0;
-        int highestNumber = 10;
+        int lowestNumber = 80;
+        int highestNumber = 90;
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
@@ -15,6 +15,7 @@ public class Main {
         Pattern3();
         Pattern4();
         Pattern5();
+        System.out.println("The sum of the array is " + sum(array));
 
 
     }
@@ -63,7 +64,8 @@ public class Main {
 
         }
     }
-    public static void Pattern3(){
+
+    public static void Pattern3() {
         for (int rows = 1; rows < 7; rows++) {
 
             for (int columns = 1; columns < 7; columns++) {
@@ -75,7 +77,8 @@ public class Main {
         }
 
     }
-    public static void Pattern4(){
+
+    public static void Pattern4() {
         for (int rows = 6; rows > 0; rows--) {
             for (int columns = rows; columns < 7; columns++) {
                 System.out.print("*");
@@ -84,8 +87,9 @@ public class Main {
         }
 
     }
-    public static void Pattern5(){
-        for (int rows = 1; rows <7; rows++) {
+
+    public static void Pattern5() {
+        for (int rows = 1; rows < 7; rows++) {
             for (int columns = 1; columns <= rows; columns++) {
                 System.out.print(columns);
             }
@@ -94,4 +98,14 @@ public class Main {
 
     }
 
+    public static int sum(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
 }
+
+
