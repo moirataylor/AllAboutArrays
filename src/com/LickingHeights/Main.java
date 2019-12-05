@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         int size = 10;
-        int lowestNumber = 80;
-        int highestNumber = 90;
+        int lowestNumber = 0;
+        int highestNumber = 10;
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
@@ -16,8 +16,7 @@ public class Main {
         Pattern4();
         Pattern5();
         System.out.println("The sum of the array is " + sum(array));
-
-
+        System.out.println("The minimum of the array is " + min(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -104,6 +103,18 @@ public class Main {
             sum += array[i];
         }
         return sum;
+    }
+
+    public static int min(int[]array) {
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
+            }
+        }
+        return min;
+
+
     }
 
 }
