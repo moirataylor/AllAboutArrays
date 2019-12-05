@@ -17,6 +17,7 @@ public class Main {
         Pattern5();
         System.out.println("The sum of the array is " + sum(array));
         System.out.println("The minimum of the array is " + min(array));
+        System.out.println("The maximum of the array is " + max(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -113,9 +114,20 @@ public class Main {
             }
         }
         return min;
+    }
 
+    public static int max(int[]array){
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+        return max;
 
     }
+
+
 
 }
 
