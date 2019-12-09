@@ -22,8 +22,15 @@ public class Main {
         bubbleSort(array);
         System.out.println("After bubble sort");
         printArray(array);
+        String[] adj = {"loud","quiet","mindblowing","super cool"};
+        String[] places = {"London", "Paris", "Germany", "Dublin,Ireland"};
+        String[] people = {"harry styles","timothee chalamet","Betty Cooper","Sam Cahill"};
+        String[] verbs = {"run","jump","skip","laugh"};
+        String[] times = {"evening","dawn","morning","dusk"};
+        String[] things = {"chair","book","movie","monster"};
 
-    }
+
+        }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
@@ -149,6 +156,8 @@ public class Main {
         return array;
 
     }
+    
+
 
 
 
