@@ -140,23 +140,20 @@ public class Main {
     }
     public static int[] bubbleSort(int[]array){
         int i,j;
-        for(i=0; i < array.length; i++){
-            for(j=0; j<array.length; j++){
+        for(i=0; i < array.length-1; i++){
+            for(j=i+1; j<array.length; j++){
                 if(array[i]>array[j]){
                     int temp=array[j];
                     array[j]=array[i];
                     array[i]=temp;
-                }
-                else{
-                    array[i]=array[i];
-                    array[j]=array[j];
                 }
             }
         }
         return array;
 
     }
-    
+
+
 
 
 
