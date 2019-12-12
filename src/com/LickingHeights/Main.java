@@ -30,7 +30,11 @@ public class Main {
         String[] verbs = {"run","jump","skip","laugh"};
         String[] times = {"evening","dawn","morning","dusk"};
         String[] things = {"chair","book","movie","monster"};
-       System.out.print(sentenceGenerator(adj,places,people,verbs,times,things));
+       System.out.println(sentenceGenerator(adj,places,people,verbs,times,things));
+       String[]firstName = {"lil","dawg","biggie","wiz"};
+       String[]secondName={"ice","snapback","dr","brocoli"};
+       String[]lastName={"khalifa","wayne","chalamet","redbeard"};
+       System.out.println(print80sRapperName(firstName,secondName,lastName));
 
 
 
@@ -173,6 +177,9 @@ public class Main {
         Random random = new Random();
         return array[random.nextInt(array.length)];
 
+    }
+    public static String print80sRapperName(String[]firstName,String[]secondName,String[]lastName){
+        return randomWord(firstName)+" "+randomWord(secondName)+" "+randomWord(lastName);
     }
 
 
