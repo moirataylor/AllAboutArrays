@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -28,6 +30,14 @@ public class Main {
         String[] verbs = {"run","jump","skip","laugh"};
         String[] times = {"evening","dawn","morning","dusk"};
         String[] things = {"chair","book","movie","monster"};
+       System.out.print(sentenceGenerator(adj,places,people,verbs,times,things));
+
+
+
+
+
+
+
 
 
         }
@@ -152,6 +162,19 @@ public class Main {
         return array;
 
     }
+    public static String sentenceGenerator(String[] adj, String[] verbs, String[]people, String[]places, String[]times, String[]things){
+    return "I was  "+randomWord(verbs)+" down the "+randomWord(places)+" around "+randomWord(times)+" with my best friend " +randomWord(people)+" and we " +randomWord(verbs)+" a "+randomWord(adj)+randomWord(things)+" that was "+randomWord(verbs)+randomWord(things);
+
+
+    }
+
+
+    public static String randomWord(String[]array){
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
+
+    }
+
 
 
 
